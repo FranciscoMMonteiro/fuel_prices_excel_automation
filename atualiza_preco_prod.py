@@ -3,8 +3,8 @@ import sys
 import os
 user = os.getlogin()
 import os
-sys.path.append(f"C:\\Users\\{user}\\ATMOSPHERE\\Atmosphere Capital - Gestão Geral\\Automation\\AtmLib")
-sys.path.append(f"C:\\Users\\{user}\\ATMOSPHERE\\Atmosphere Capital - Gestão Geral\\Automation\\AtmLib\\atmlib")
+sys.path.append()
+sys.path.append()
 import pymongo
 import mongo # type: ignore
 import MongoDB # type: ignore
@@ -126,7 +126,7 @@ def main():
     mdb = MongoDB.OurMongoClient(MongoDB.get_mongo_conn(environment=tipo_bd))
 
     # PEGANDO VARIAVEL DE OBJETO EXCEL
-    folder = fr'C:\Users\{user}\ATMOSPHERE\Atmosphere Capital - Capital - Market Inteligence\Deliverables'
+    folder = fr''
     name = "MS_Price_Deck_new.xlsm"
     file_path = os.path.join(folder, name)
     wb = xw.Book(file_path)
